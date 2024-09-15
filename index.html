@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    
+
+    <div class="con">
+
+        <div class="con-style">
+
+            <div class="inputs">
+
+                <div class="the-input-con">
+                    <div class="input-title" id="years-title">YEAR</div>
+                    <input type="number" class="text-box-input" id="years-input" placeholder="YYYY" inputmode="numeric">
+                    <div class="errors">
+                        <div id="years-filed-req">This field is required</div>
+                        <div id="years-valid-input">Must be a valid year</div>
+                        <div id="years-valid-number">Must be a valid number</div>
+                    </div>
+                </div>
+
+                <div class="the-input-con">
+                    <div class="input-title" id="month-title">MONTH</div>
+                    <input type="number" class="text-box-input" id="months-input" placeholder="MM" inputmode="numeric">
+                    <div class="errors">
+                        <div id="months-filed-req">This field is required</div>
+                        <div id="months-valid-input">Must be a valid month</div>
+                        <div id="months-valid-number">Must be a valid number</div>
+                    </div>
+                </div>
+
+                <div class="the-input-con">
+                    <div class="input-title" id="days-title">DAY</div>
+                    <input type="number" class="text-box-input" id="days-input" placeholder="DD" inputmode="numeric">
+                    <div class="errors">
+                        <div id="days-filed-req">This field is required</div>
+                        <div id="days-valid-input">Must be a valid day</div>
+                        <div id="days-valid-number">Must be a valid number</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="converting-area">
+
+                <div class="line"></div>
+                <button id="clear-all">Clear All</button>
+                <img src="images/icon-arrow.svg" class="arrow-img" onclick="submit();">
+
+            </div>
+
+            <div class="results-con">
+
+                <div class="years">
+                    <div id="result-year">--</div>
+                    <div class="result-title">years</div>
+                </div>                
+
+                <div class="months">
+                    <div id="result-month">--</div>
+                    <div class="result-title">months</div>
+                </div>                
+
+                <div class="days">
+                    <div id="result-day">--</div>
+                    <div class="result-title">days</div>
+                </div>                
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="control.js"></script>
+
+</body>
+</html>
+
+
+<!--
+ 
+Day
+DD
+
+Month
+MM
+
+Year
+YYYY
+
+-- years
+-- months
+-- days
+
+ -->
